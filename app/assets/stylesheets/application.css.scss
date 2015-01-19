@@ -1,0 +1,123 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+ *= require_self
+ *= require jquery.ui.all
+ *= require_tree .
+ */
+
+@import "bootstrap";
+@import "font-awesome";
+
+body, h1, h3, h4, ul, li, a {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  font: inherit;
+  color: black;
+  font-family: sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.group:after {
+  display: block;
+  content: "";
+  clear: both;
+}
+
+div#main {
+  position: absolute;
+  left: 100px;
+}
+
+h1 {
+  font-size: 50px;
+}
+
+h3 {
+  font-size: 25px;
+}
+
+// dragging stuff
+
+.highlight-card {
+  background-color: blue;
+  font-size: 20px;
+  margin: 10px 0;
+  padding: 2px;
+  border: 2px solid black;
+  border-radius: 3px;
+}
+
+.highlight-list {
+  background-color: #666;
+  float: left;
+  margin-right: 10px;
+  border: 2px solid black;
+  padding: 13px;
+  border-radius: 5px;
+}
+
+// board stuff
+ul.boards {
+
+}
+
+.boards li.board {
+  margin: 5px;
+}
+
+li.board a {
+  display: inline-block;
+  background-color: #DDD;
+  font-size: 30px;
+  width: 200px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+// list stuff
+ul.lists {
+}
+
+.lists li.list {
+  background-color: #5C8AE6;
+  float: left;
+  margin-right: 10px;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+button.add-list {
+  clear: left;
+}
+
+.list h3 {
+  font-size: 30px;
+}
+
+// card stuff
+ul.cards {
+}
+
+.cards li.card {
+  background-color: #85ADFF;
+  font-size: 20px;
+  margin: 10px 0;
+  padding: 4px;
+  border-radius: 3px;
+}
